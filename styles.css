@@ -1,5 +1,7 @@
 body{
     background-color: #EFE3E3;
+    cursor:url(https://cur.cursors-4u.net/symbols/images6/sym596.png), auto;
+
 }
 
 .imgbox{
@@ -16,6 +18,7 @@ body{
     margin-top: 70px;
 
 }
+
 
 .masterbox{
     width: max-content;
