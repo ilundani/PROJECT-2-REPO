@@ -143,3 +143,28 @@ select{
     text-align: center;
     font-size: 1.2rem;
 }
+
+select:active{
+    background-color: rgb(210, 255, 210);
+    border-color: 2px solid #DA517E;
+    font-family: "Emilys Candy", serif; 
+    color: #DA517E;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+select:hover{
+background-color: rgb(210, 255, 210);
+font-family: "Emilys Candy", serif; 
+color: #DA517E;
+border-color: 2px solid #DA517E;
+text-align: center;
+font-size: 1.2rem;}
+
+.compatibility-img{
+    margin-top: 20px;
+width: 500px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+}

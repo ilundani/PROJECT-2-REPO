@@ -1,29 +1,24 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Jersey+10&family=Jersey+15&family=Schoolbell&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-       <div class="imgbox">
-        <img class="heartcandy" src="https://webstockreview.net/images/candy-hearts-png.png">
-       </div>
-       <div class="masterbox">
+<head>
+    <meta charset="utf-8">
+    <title>Zodiac Compatibility</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Jersey+10&family=Jersey+15&family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="imgbox">
+        <img class="heartcandy" src="https://webstockreview.net/images/candy-hearts-png.png" alt="Heart Candy">
+    </div>
+    <div class="masterbox">
         <h1 class="title">Test Your Zodiac Compatibility!</h1>
-       </div>
-       <h2><span style="color: rgb(208, 0, 76)">₊˚⊹♡ </span>Type in your zodiac sign and another
+    </div>
+    <h2><span style="color: rgb(208, 0, 76)">₊˚⊹♡ </span>Type in your zodiac sign and another
         <br> person's zodiac sign to test your compatibility!
         <span style="color: rgb(208, 0, 76)">❤︎₊ ⊹</span></h2>
-       <div class="names">
+    <div class="names">
         <form>
             <label for="userInput1"></label>
             <input type="text" id="userInput1" name="userInput1" placeholder="Person 1">
@@ -32,32 +27,160 @@
             <label for="userInput2"></label>
             <input type="text" id="userInput2" name="userInput2" placeholder="Person 2">
         </form>
-       </div>
-       <div class="testbutton">
-        <button class="test">Test!</button>
-       </div>
-       <div class="confusion">
+    </div>
+    <div class="testbutton">
+        <button class="test" onclick="checkCompatibility()">Test!</button>
+    </div>
+
+    <div class="confusion">
         <form>
             <p class="colorful-text">
                 How do I know someone's zodiac sign?
             </p>
             <select id="zodiac" name="zodiac">
-              <option value="aries">Aries: March 21 - April 19</option>
-              <option value="taurus">Taurus: April 20 - May 20</option>
-              <option value="gemini">Gemini: May 21 - June 20</option>
-              <option value="cancer">Cancer: June 21 - July 22 </option>
-              <option value="leo">Leo: July 23 - August 22</option>
-              <option value="virgo">Virgo: August 23 - September 22</option>
-              <option value="libra">Libra: September 23 - October 22</option>
-              <option value="scorpio">Scorpio: October 23 - November 21</option>
-              <option value="sagittarius">Sagittarius: November 22 - December 21</option>
-              <option value="capricorn">Capricorn: December 22 - January 19</option>
-              <option value="aquarius">Aquarius: January 20 - February 18</option>
-              <option value="pisces">Pisces: February 19 - March 20</option>
+                <option value="aries">♈︎ Aries: March 21 - April 19</option>
+                <option value="taurus">♉︎ Taurus: April 20 - May 20</option>
+                <option value="gemini">♊︎ Gemini: May 21 - June 20</option>
+                <option value="cancer">♋︎ Cancer: June 21 - July 22</option>
+                <option value="leo">♌︎ Leo: July 23 - August 22</option>
+                <option value="virgo">♍︎ Virgo: August 23 - September 22</option>
+                <option value="libra">♎︎ Libra: September 23 - October 22</option>
+                <option value="scorpio">♏︎ Scorpio: October 23 - November 21</option>
+                <option value="sagittarius">♐︎ Sagittarius: November 22 - December 21</option>
+                <option value="capricorn">♑︎ Capricorn: December 22 - January 19</option>
+                <option value="aquarius">♒︎ Aquarius: January 20 - February 18</option>
+                <option value="pisces">♓︎ Pisces: February 19 - March 20</option>
             </select>
-          </form>
-       </div>
-        
-        <script src="" async defer></script>
-    </body>
+        </form>
+    </div>
+
+    <!-- Compatibility Image that will pop up -->
+    <img id="compatibilityImage" class="compatibility-img" src="https://example.com/compatibility_image.png" alt="Compatibility Image" style="display: none;">
+
+    <script>
+        function checkCompatibility() {
+            // Get user inputs
+            var person1 = document.getElementById("userInput1").value.toLowerCase();
+            var person2 = document.getElementById("userInput2").value.toLowerCase();
+
+            // Sample zodiac compatibility check (you can expand this logic)
+            if (person1 === "aries" && person2 === "aries") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            } else if (person1 === "aries" && person2 === "taurus") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            } 
+            else if (person1 === "aries" && person2 === "gemini") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "cancer") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "leo") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "virgo") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "libra") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "scorpio") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "sagittarius") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "capricorn") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "aquarius") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "aries" && person2 === "pisces") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "aries") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "taurus") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "gemini") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "cancer") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "leo") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "virgo") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "libra") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "scorpio") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "sagittarius") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "capricorn") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "aquarius") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "taurus" && person2 === "pisces") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "aries") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "taurus") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "gemini") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "cancer") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "leo") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "virgo") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "libra") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "scorpio") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "sagittarius") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "capricorn") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "aquarius") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else if (person1 === "gemini" && person2 === "pisces") {
+                showCompatibilityImage("https://static.vecteezy.com/system/resources/previews/023/611/570/original/pixel-heart-isolated-pink-png.png"); // Replace with actual image URL
+            }
+            else {
+                showCompatibilityImage("https://example.com/default_compatibility_image.png"); // Replace with a default image
+            }
+        }
+
+        function showCompatibilityImage(imageUrl) {
+            var img = document.getElementById("compatibilityImage");
+            img.src = imageUrl;
+            img.style.display = "block";  // Show the image
+        }
+    </script>
+</body>
 </html>
