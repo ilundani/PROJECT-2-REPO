@@ -1,0 +1,145 @@
+body{
+    background-color: #EFE3E3;
+}
+
+.imgbox{
+    display: flex;
+    width: 100vw;
+}
+
+.heartcandy{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 70px;
+
+}
+
+.masterbox{
+    width: max-content;
+    display: flex;
+    width: 100vw; 
+    text-align: center;
+    justify-content: center;
+
+}
+
+.title{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    color: #E782A3;
+    letter-spacing: 1px;
+    font-size: 3rem;
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+
+
+}
+
+h2{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #E782A3; 
+    text-align: center;
+    justify-content: center;
+    margin-top: -20px; 
+}
+
+.names{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+input{
+    background-color: #F5F5F5;
+    border: 2.5px solid #E782A3;
+    border-radius: 7%;
+    padding: 13px;
+    font-size: 20px;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    color: #DA517E;
+    margin-right: 30px;
+    text-align: center;
+    
+}
+
+input::placeholder {
+    color: #DA517E;
+}
+
+
+input:focus::placeholder {
+    color: transparent;}
+
+input:focus {
+    border-color: #E782A3;
+    outline: none;
+
+}
+
+.testbutton{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.test{
+    background-color: #E782A3;
+    border: 2.5px solid #DA517E;
+    border-radius: 7%;
+    padding: 5px 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Jersey 10", sans-serif;
+    color: white;
+    font-size: 20px;
+
+}
+
+.test:hover{
+    cursor: pointer;
+    background-color: #e782a4a7;
+    border: 2.5px solid #DA517E;
+}
+
+.test:active{
+    cursor: pointer;
+    background-color: white;
+    border: 2.5px solid #DA517E;
+    color:#DA517E;
+
+}
+
+.confusion{
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+margin-top: 100px;
+font-family: "Jersey 10", sans-serif;
+
+}
+
+.colorful-text{
+    font-family: "Emilys Candy", serif;
+    margin-top: -60px;
+    color: rgb(159, 100, 159);
+    background-color: #f5f5f5;
+    border: 2px dotted rgb(210, 255, 210);
+    padding: 3px 10px;
+    border-radius: 5%;
+
+}
+
+select{
+    background-color: rgb(210, 255, 210);
+    font-family: "Emilys Candy", serif; 
+    color: #DA517E;
+    text-align: center;
+    font-size: 1.2rem;
+}
